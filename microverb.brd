@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -1572,46 +1572,124 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="V1" library="tubesC" package="6NXX-PIT" value="" x="26.67" y="22.86" rot="R180"/>
-<element name="C3" library="rcl" package="C1206" value="2n2" x="20.32" y="27.305" rot="R270"/>
-<element name="C5" library="rcl" package="C1206" value="4n7" x="32.385" y="13.97" rot="R270"/>
-<element name="R5" library="rcl" package="R2512" value="10k" x="29.21" y="36.83"/>
-<element name="R8" library="rcl" package="R1206" value="220k" x="34.29" y="19.05"/>
-<element name="R9" library="rcl" package="R1206" value="1k" x="19.05" y="22.86"/>
-<element name="R6" library="rcl" package="R1206" value="2k2" x="34.29" y="22.86" rot="R180"/>
-<element name="R7" library="rcl" package="R1206" value="220k" x="19.05" y="19.05"/>
-<element name="R4" library="rcl" package="R1206" value="1M" x="34.29" y="26.67" rot="R180"/>
-<element name="PRI-" library="adafruit" package="1X01" value="" x="22.86" y="31.75"/>
-<element name="PRI+" library="adafruit" package="1X01" value="" x="22.86" y="36.83"/>
-<element name="SEC+" library="adafruit" package="1X01" value="" x="17.78" y="31.75"/>
-<element name="SEC-" library="adafruit" package="1X01" value="" x="17.78" y="36.83"/>
-<element name="C4" library="rcl" package="C1206" value="150p" x="19.05" y="13.97"/>
-<element name="R10" library="pot" package="3RP/1610N" value="500kB" x="25.4" y="3.81"/>
-<element name="R2" library="rcl" package="R1206" value="3M3" x="39.37" y="13.97" rot="R270"/>
-<element name="R3" library="rcl" package="R1206" value="1M5" x="36.195" y="13.97" rot="R270"/>
-<element name="C2" library="rcl" package="C1206" value="250p" x="38.1" y="9.525"/>
-<element name="IN" library="adafruit" package="1X01" value="" x="43.18" y="11.43"/>
-<element name="OUT" library="adafruit" package="1X01" value="" x="43.18" y="3.81"/>
-<element name="GND" library="adafruit" package="1X01" value="" x="44.45" y="26.67"/>
-<element name="GND_" library="adafruit" package="1X01" value="" x="43.18" y="7.62"/>
-<element name="R1" library="rcl" package="R1206" value="680k" x="39.37" y="5.08" rot="R90"/>
-<element name="C1" library="rcl" package="C1206" value="100p" x="36.195" y="5.08" rot="R90"/>
-<element name="V+" library="adafruit" package="1X01" value="" x="39.37" y="26.67"/>
-<element name="CTX" library="con-lumberg" package="BTOR1" value="" x="8" y="32">
+<element name="V1" library="tubesC" package="6NXX-PIT" value="" x="26.67" y="22.86" smashed="yes" rot="R180">
+<attribute name="VALUE" x="21.59" y="27.94" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C3" library="rcl" package="C1206" value="2n2" x="20.32" y="27.305" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.59" y="28.575" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="17.78" y="28.575" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C5" library="rcl" package="C1206" value="4n7" x="32.385" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="29.509190625" y="15.42460625" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="29.845" y="15.24" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R5" library="rcl" package="R2512" value="10k" x="29.21" y="36.83" smashed="yes">
+<attribute name="NAME" x="29.60573125" y="35.950753125" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="26.67" y="33.655" size="1.27" layer="27"/>
+</element>
+<element name="R8" library="rcl" package="R1206" value="220k" x="34.29" y="19.05" smashed="yes">
+<attribute name="NAME" x="33.2963875" y="20.227696875" size="1.016" layer="25" font="vector"/>
+<attribute name="VALUE" x="33.02" y="16.51" size="1.27" layer="27"/>
+</element>
+<element name="R9" library="rcl" package="R1206" value="1k" x="19.05" y="22.86" smashed="yes">
+<attribute name="NAME" x="14.647609375" y="22.37625" size="1.016" layer="25" font="vector"/>
+<attribute name="VALUE" x="17.78" y="20.32" size="1.27" layer="27"/>
+</element>
+<element name="R6" library="rcl" package="R1206" value="2k2" x="34.29" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.56" y="25.37440625" size="1.016" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="35.56" y="25.4" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R7" library="rcl" package="R1206" value="220k" x="19.05" y="19.05" smashed="yes">
+<attribute name="NAME" x="14.55548125" y="18.473946875" size="1.016" layer="25" font="vector"/>
+<attribute name="VALUE" x="17.78" y="16.51" size="1.27" layer="27"/>
+</element>
+<element name="R4" library="rcl" package="R1206" value="1M" x="34.29" y="26.67" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.652128125" y="29.3690125" size="1.016" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="35.56" y="29.21" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="PRI-" library="adafruit" package="1X01" value="" x="22.86" y="31.75" smashed="yes">
+<attribute name="NAME" x="20.93198125" y="30.507584375" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="21.59" y="28.575" size="1.27" layer="27"/>
+</element>
+<element name="PRI+" library="adafruit" package="1X01" value="" x="22.86" y="36.83" smashed="yes">
+<attribute name="NAME" x="20.7445375" y="35.12219375" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="21.59" y="33.655" size="1.27" layer="27"/>
+</element>
+<element name="SEC+" library="adafruit" package="1X01" value="" x="17.78" y="31.75" smashed="yes">
+<attribute name="NAME" x="16.043328125" y="30.285903125" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="16.51" y="28.575" size="1.27" layer="27"/>
+</element>
+<element name="SEC-" library="adafruit" package="1X01" value="" x="17.78" y="36.83" smashed="yes">
+<attribute name="NAME" x="15.881134375" y="34.963903125" size="1" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="16.51" y="33.655" size="1.27" layer="27"/>
+</element>
+<element name="C4" library="rcl" package="C1206" value="150p" x="19.05" y="13.97" smashed="yes">
+<attribute name="NAME" x="16.67445" y="11.45559375" size="1.016" layer="25" font="vector"/>
+<attribute name="VALUE" x="17.78" y="11.43" size="1.27" layer="27"/>
+</element>
+<element name="R10" library="pot" package="3RP/1610N" value="500kB" x="25.4" y="3.81" smashed="yes">
+<attribute name="VALUE" x="22.225" y="6.35" size="1.27" layer="27"/>
+</element>
+<element name="R2" library="rcl" package="R1206" value="3M3" x="39.37" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.139090625" y="15.424603125" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="36.83" y="15.24" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R3" library="rcl" package="R1206" value="1M5" x="36.195" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.68770625" y="15.42460625" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="33.655" y="15.24" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C2" library="rcl" package="C1206" value="250p" x="38.1" y="9.525" smashed="yes">
+<attribute name="NAME" x="33.60548125" y="9.871971875" size="1.016" layer="25" font="vector"/>
+<attribute name="VALUE" x="36.83" y="6.985" size="1.27" layer="27"/>
+</element>
+<element name="IN" library="adafruit" package="1X01" value="" x="43.18" y="11.43" smashed="yes">
+<attribute name="NAME" x="45.334709375" y="10.95123125" size="1.016" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="41.91" y="8.255" size="1.27" layer="27"/>
+</element>
+<element name="OUT" library="adafruit" package="1X01" value="" x="43.18" y="3.81" smashed="yes">
+<attribute name="NAME" x="45.242575" y="3.238928125" size="1.016" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="41.91" y="0.635" size="1.27" layer="27"/>
+</element>
+<element name="GND" library="adafruit" package="1X01" value="" x="44.45" y="26.67" smashed="yes">
+<attribute name="VALUE" x="43.18" y="23.495" size="1.27" layer="27"/>
+</element>
+<element name="GND_" library="adafruit" package="1X01" value="" x="43.18" y="7.62" smashed="yes">
+<attribute name="VALUE" x="41.91" y="4.445" size="1.27" layer="27"/>
+</element>
+<element name="R1" library="rcl" package="R1206" value="680k" x="39.37" y="5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.602834375" y="2.26575625" size="1.016" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="41.91" y="3.81" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C1" library="rcl" package="C1206" value="100p" x="36.195" y="5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.379875" y="2.223146875" size="1.016" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="38.735" y="3.81" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="V+" library="adafruit" package="1X01" value="" x="39.37" y="26.67" smashed="yes">
+<attribute name="NAME" x="37.83954375" y="23.514459375" size="1.016" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="38.1" y="23.495" size="1.27" layer="27"/>
+</element>
+<element name="CTX" library="con-lumberg" package="BTOR1" value="" x="8" y="32" smashed="yes">
 <attribute name="OC_NEWARK" value="96K7172" x="27.05" y="4.06" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="BTOR 1" x="27.05" y="4.06" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="27.05" y="4.06" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1217030" x="27.05" y="4.06" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.99585625" y="27.109015625" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="2.92" y="24.38" size="1.27" layer="27"/>
 </element>
-<element name="CRX" library="con-lumberg" package="BTOR1" value="" x="8" y="8">
+<element name="CRX" library="con-lumberg" package="BTOR1" value="" x="8" y="8" smashed="yes">
 <attribute name="OC_NEWARK" value="96K7172" x="44.83" y="1.65" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="BTOR 1" x="44.83" y="1.65" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="44.83" y="1.65" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1217030" x="44.83" y="1.65" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.90486875" y="10.586671875" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="2.92" y="0.38" size="1.27" layer="27"/>
 </element>
 <element name="U$2" library="holes" package="3,2" value="" x="8" y="20"/>
 <element name="U$3" library="holes" package="3,2" value="" x="43" y="20"/>
-<element name="C6" library="rcl" package="E5-10,5" value="10µ" x="39.37" y="34.29" rot="R90"/>
+<element name="C6" library="rcl" package="E5-10,5" value="10µ" x="39.37" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.9031875" y="33.912353125" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="42.5958" y="31.1658" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
